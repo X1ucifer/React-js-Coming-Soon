@@ -14,7 +14,7 @@ export default function LandPage() {
         <>
 
             <div className="container">
-                <img className="welcome" src="../logo.svg"></img>
+                <img className="welcome" src="../logo.svg" alt="image"/>
                 <div className="overlay">
                     <h1 className="glitch"  >COMING SOON</h1>
                     <Countdown className="timer" date={`${year}-11-17T00:00:00`} />
