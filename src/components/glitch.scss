@@ -1,6 +1,7 @@
 // Ignore all of this, scroll down until you see the next comment.
 // I just like my eye candy. 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100');
+@import url('http://fonts.cdnfonts.com/css/olympus');
 
 
 html, body, h1 {
@@ -42,22 +43,26 @@ directly on our existing text, while
 also setting content to the appropriate
 text set in the data-text attribute. */
 @mixin glitchCopy { 
-		content: 'COMING SOON';
+		content: 'O';
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'olympusregular' !important;
+		
 }
 
 .glitch {
-	position: relative;
-	color: white;
-	font-size: 4em;
-	letter-spacing: .5em;
-	/* Animation provies a slight random skew. Check bottom of doc
-	for more information on how to random skew. */
-	animation: glitch-skew 1s infinite linear alternate-reverse;
+    position: relative;
+    color: white;
+    font-size: 4em;
+    letter-spacing: .5em;
+    animation: glitch-skew 1s infinite linear alternate-reverse;
+	font-family: 'olympusregular' !important;
+    top: 5%;
+    // left: 48%;
+	z-index: 1;
 	
 	// Creates a copy before our text. 
 	&::before{

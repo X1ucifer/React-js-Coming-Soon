@@ -1,7 +1,7 @@
-.container{
-    display: flex;
-   
-}
+@import url('http://fonts.cdnfonts.com/css/olympus');
+
+
+
 
 .bg{
   width: 100vw;
@@ -62,13 +62,40 @@
   font-size: 50px;
 }
 
+.logo{
+  /* background-image: linear-gradient(to bottom right,#000000,#dc422500); */
+  /* opacity: .8; */
+  position: absolute;
+  width: 300px;
+  display: flex;
+  /* border: 3px solid red; */
+  transform: translate(-150px,4px);
+  left: 50%;
+  z-index: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  
+  .logo{
+    /* background-image: linear-gradient(to bottom right,#000000,#dc422500); */
+    /* opacity: .8; */
+    position: absolute;
+    width: 300px;
+    display: flex;
+    /* border: 3px solid red; */
+    transform: translate(-174px,100px);
+    left: 50%;
+    z-index: 1;
+  }
+}
+
+
 .welcome {
   /* make it position:absolute instead if you want it to be centered as shown below*/
   z-index: 1;
   object-fit: cover;
   display: flex;
   justify-content: center;
-  font-family: sans-serif;
   text-align: center;
   padding-top: 40px;
   color: white;
@@ -77,29 +104,42 @@
   top: 8%;
   transform: translate(-35%, -50%);
   width: 28%;
-}
+  font-family: 'Olympus', sans-serif;
+                                                
 
-@media only screen and (min-width: 768px) {
-  .welcome {
-    /* make it position:absolute instead if you want it to be centered as shown below*/
-    z-index: 1;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    text-align: center;
-    padding-top: 40px;
-    color: white;
-    position: absolute;
-    left: 47%;
-    top: 16%;
-    transform: translate(-35%, -50%);
-    width: 18%;
-  }
-  
 }
 
 
+.logo .welcome1 {
+  /* make it position:absolute instead if you want it to be centered as shown below*/
+  z-index: 1;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* padding-top: 40px; */
+  color: white;
+  position: absolute;
+  left: 56%;
+  top: 28%;
+  transform: translate(-35%, -50%);
+  width: 18%;
+  font-family:  sans-serif;
+  font-size: 19pt;
+  margin-bottom: 20px;                                   
+}
+
+.message{
+  /* border: 3px solid red; */
+  color: #fff;
+  z-index: 1;
+  width: 200px;
+  position: absolute;
+  bottom: 10%;
+  text-align: center;
+  transform: translate(-54%,0px);
+  left: 50%;
+}
 
 
   h1 {
@@ -108,9 +148,21 @@
       text-shadow: 0 0 .3em rgb(255, 255, 255); 
       margin: 0 0 1em;
       color: white;
-      font-family: 'Poppins', sans-serif;
       letter-spacing:31px;
-    }
-  p {font-size: 10pt;;margin: 1em 0; color: white; margin-top: 60px;font-weight: 600;  letter-spacing:6px;}
+
+  }
+    
+  h2 {
+    font-size: 31pt; 
+    /* font-weight: bold;  */
+    text-shadow: 0 0 .3em rgb(255, 255, 255); 
+    margin: 0 0 1em;
+    color: white;
+    letter-spacing:11px;
+    
+  }
+  p {font-size: 10pt;;margin: 1em 0; color: white; margin-top: 60px;font-weight: 600;  letter-spacing:6px;
+    
+  }
   a {color: #fff;}
   
