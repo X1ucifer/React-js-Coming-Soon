@@ -10,11 +10,18 @@ import { width } from '@mui/system';
 
 export default function Form({close}) {
 
-    const [value, setValue] = React.useState(true);
+    const [value, setValue] = React.useState("");
+    const [mail, setMail] = React.useState("");
+
 
     const handleChange = (event) => {
         setValue(event.target.value);
     };
+
+    const handleMail = (event) => {
+        setMail(event.target.value);
+    };
+
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -33,15 +40,18 @@ export default function Form({close}) {
         <form class="form" onSubmit={sendEmail}>
             {/* <h5>CONTACT US</h5> */}
             <p type="Name:">
-                <input placeholder="Write your name here.." name="name">
+                <input placeholder="Write your name here.." name="name" value={value} onChange={handleChange}> 
                 </input>
             </p>
-            <p type="Email:"><input placeholder="Let us know how to contact you back..@gmail" name="email"></input></p>
-            <p type="Message:"><input placeholder="What would you like to tell us.." name="message"></input></p>
-            {/* <Button variant="contained" style={{ backgroundColor: "green" }} endIcon={<SendIcon />} >
+            <p type="Email:"><input placeholder="Let us know how to contact you back..@gmail" name="email"  value={mail} onChange={handleMail} ></input></p>
+            <p type="Message:"><textarea placeholder="What would you like to tell us.." rows="4" cols="2" name="message"></textarea></p>
+
+            <Button variant="contained"  disabled={!value || !mail} type="submit" style={{ backgroundColor: "green",padding:"10px",marginTop:"15px" }} onClick={close} endIcon={<SendIcon />} >
                 Send
-            </Button> */}
-            <input onClick={close} style={{cursor:"pointer",padding:"10px",marginTop:"15px"}} type="submit" value="Send Message"></input>
+            </Button>
+            {/* <input disabled={!value} onClick={close} style={{cursor:"pointer",padding:"10px",marginTop:"15px"}} type="submit" value="Send Message"></input> */}
+            {/* <button disabled={!value} type="submit">Let me in</button>  */}
+
 
         </form>
 

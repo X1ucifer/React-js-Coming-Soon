@@ -15,8 +15,8 @@ const style = {
     transform: 'translate(-50%, -50%)',
     width: 600,
     // bgcolor: 'black',
-    background: 'linear-gradient(to right, #000000, #5c8d0700)',
-    border: '2px solid #000',
+    background: 'linear-gradient(to right, #000000, #a2ef1e1c)',
+    border: '1px solid #9ae80082',
     boxShadow: 24,
     p: 4,
 };

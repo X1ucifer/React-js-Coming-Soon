@@ -50,7 +50,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
 input,
 textarea {
-    padding: 30px;
+    padding: 20px;
     border: 0;
     width: 100%;
     font-size: 1rem;
@@ -71,7 +71,7 @@ textarea:focus ~ span {
 
 textarea {
     width: 100%;
-    min-height: 15em;
+    min-height: 1em;
 }
 
 .input-container {
@@ -81,7 +81,7 @@ textarea {
 }
 
 .submit-btn {
-    float: right;
+    /* float: right; */
     padding: 7px 35px;
     border-radius: 60px;
     display: inline-block;
